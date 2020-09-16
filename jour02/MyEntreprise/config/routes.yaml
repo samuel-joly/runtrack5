@@ -1,3 +1,15 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+myEntreprise:
+    path: /myEntreprise
+    controller: App\Controller\MyEntrepriseController:index
+home:
+    path: /
+    controller: App\Controller\MyEntrepriseController:home
+
+projectPage:
+    path: /myEntreprise/{id}
+    controller: App\Controller\MyEntrepriseController:project_page
+    methods : GET|HEAD

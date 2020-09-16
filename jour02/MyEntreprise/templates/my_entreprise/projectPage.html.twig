@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet {% endblock %}
+
+{% block body %}
+    <div class='d-flex flex-column justify-content-center align-items-center m-auto p-0' style='width:20em;'>
+        <span class='p-0 d-flex justify-content-between align-items-center'>
+            <p class='h2 text-center'>{{project.title}}</p>
+            <small>{{project.createdAt|date('d/m/Y')}}</small>
+        </span>
+
+        <img src='{{asset(project.image)}}' style='height:8em;'>
+        <p class='p-2 text-center'>{{project.content}}</p>
+    </div>
+{% endblock %}
