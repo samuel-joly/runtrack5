@@ -1,10 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function TheTitle () {
   return (
-    <h1>Calculator 9000</h1>
+    <p class='col-12 h3 text-center'>Calculator 9000</p>
   );
 }
 
